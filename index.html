@@ -17,10 +17,6 @@ l=new RegExp(n),
 c=l.exec(window.location.href);
 return null==c?"//www.drivetv.ga/video.mp4":unescape(c[1])}
 var link=get("src");
-
-if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/Mobile Safari/i) || navigator.userAgent.match(/Blackberry/i)){
-		document.write("\<video style=\"width:100%;height:100%\" controls autoplay preload=\"auto\" src=\""+src+"\"\>\<\/video\>");
-	}else {
 var player = new Clappr.Player(
 {source:link,
 plugins: [LevelSelector], 
